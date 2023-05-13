@@ -1,4 +1,7 @@
 
+# Hi, I'm Pradeep Raghavan! 👋
+
+
 # Rudo Wealth - Web Development Project
 
 Rudo Wealth is a web development project focused on providing financial and investment services to its clients. This project is built using HTML, CSS, JavaScript, jQuery, and is implemented on the WordPress CMS.
@@ -65,4 +68,20 @@ This project is licensed under the [MIT](https://choosealicense.com/licenses/mit
 
 - The team at Rudo Wealth for providing the requirements and feedback for the project.
 - The developers of the technologies used in this project.
+
+
+![Logo](https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FImages%2FLogo%2FBumbleBees-Logo-Black.png?alt=media&token=f0c1400d-20a2-4988-823d-05ae1bfa4c38)
+
+
+## Used By
+
+This project is used by the following companies:
+
+- Pradeep Raghavan
+- Bumble Bees
+
+
+## Support
+
+For support, email pradeep@bumblebees.co.in or join our [Blog Page](https://blog.bumblebees.co.in/).
 
