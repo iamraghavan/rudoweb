@@ -15,6 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
   <title>RuDo</title>
 </head>
 
@@ -238,63 +242,113 @@ color: #FEFEFE;
 
   <!-- carosel -->
   <section class="d-flex align-items-center justify-content-center">
+    <div class="bbb_viewed_nav_container">
+
+
+      <div class="bbb_viewed_nav bbb_viewed_prev" data-bs-target="#carouselExampleControls"
+      data-bs-slide="prev"><i class="fas fa-chevron-left"></i></div>
+      <div class="bbb_viewed_nav bbb_viewed_next" data-bs-target="#carouselExampleControls"
+      data-bs-slide="next"><i class="fas fa-chevron-right"></i></div>
+       
+    </div>
     <div id="carouselExampleControls" class="carousel slide w-75" data-bs-ride="carousel">
+
+
+
+<style>
+  .bbb_viewed_nav_container
+{
+    position: absolute;
+    right: -5px;
+    bottom: 14px;
+}
+.bbb_viewed_nav
+{
+    display: inline-block;
+    cursor: pointer;
+}
+.bbb_viewed_nav i
+{
+    color: #dadada;
+    font-size: 18px;
+    padding: 5px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.bbb_viewed_nav:hover i
+{
+    color: #606264;
+}
+.bbb_viewed_prev
+{
+    margin-right: 15px;
+}
+</style>
+
+      <!-- <button class="carousel-control-prev" type="button" 
+      style="background-color: #01001A;height: 60px;width: 60px; border-radius: 50%;margin: auto;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button"  style="background-color: #01001A;height: 60px;width: 60px; border-radius: 50%; margin: auto;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="cards-wrapper">
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-1.svg" alt="...">
+              <img src="./images/brand-1.svg" alt="...">
             </div>
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-2.svg" alt="...">
+              <img src="./images/brand-2.svg" alt="...">
             </div>
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-3.svg" alt="...">
+              <img src="./images/brand-3.svg" alt="...">
+            </div>
+            <div class="card my-cards">
+              <img src="./images/brand-4.svg" alt="...">
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="cards-wrapper">
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-4.svg" alt="...">
+              <img src="./images/brand-5.svg" alt="...">
             </div>
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-1.svg" alt="...">
+              <img src="./images/brand-1.svg" alt="...">
             </div>
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-2.svg" alt="...">
+              <img src="./images/brand-2.svg" alt="...">
+            </div>
+            <div class="card my-cards">
+              <img src="./images/brand-3.svg" alt="...">
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="cards-wrapper">
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-4.svg" alt="...">
+              <img src="./images/brand-4.svg" alt="...">
             </div>
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-1.svg" alt="...">
+              <img src="./images/brand-5.svg" alt="...">
             </div>
             <div class="card my-cards">
-              <img src="./images/carosel-img/img-2.svg" alt="...">
+              <img src="./images/brand-1.svg" alt="...">
+            </div>
+            <div class="card my-cards">
+              <img src="./images/brand-2.svg" alt="...">
             </div>
           </div>
         </div>
 
-        <div>
-
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-            style="background-color: #01001A;height: 60px;width: 60px; border-radius: 50%;margin: auto;">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next" style="background-color: #01001A;height: 60px;width: 60px; border-radius: 50%; margin: auto;">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+        
       </div>
 
     </div>
