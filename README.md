@@ -70,7 +70,7 @@ This project is licensed under the [MIT](https://choosealicense.com/licenses/mit
 - The developers of the technologies used in this project.
 
 
-![Logo](https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FImages%2FLogo%2FBumbleBees-Logo-Black.png?alt=media&token=f0c1400d-20a2-4988-823d-05ae1bfa4c38)
+![Logo](https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FImages%2FLogo%2FBumbleBees-Logo-White.png?alt=media&token=0ab358cb-5938-444f-91ef-b6d5376a1b81)
 
 
 ## Used By
