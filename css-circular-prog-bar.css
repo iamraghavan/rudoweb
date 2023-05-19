@@ -1,0 +1,19 @@
+.progress-bar-danger-r {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 5pt;
+  line-height: 6pt;
+  font-weight: bold;
+   
+}
+
+.col-md-3-progress{margin:0px 2px; float: left;}
+
+/*.progress-bar-danger::before {
+  content: "70%";
+}*/
