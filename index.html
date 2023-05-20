@@ -103,6 +103,12 @@
    .link{cursor: pointer;}
    @media only screen and (max-width: 600px) {
    .md-slide{ display:none !important;}
+   .progress-bar-danger-r {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 6pt !important;
+    line-height: 9pt !important;
+    }
     }
     @media only screen and (min-width: 600px) {
    .sm-slide{ display:none !important;}
@@ -1593,7 +1599,7 @@ border-radius: 32px;
        <div class="carousel-item active">
         <div class="cards-wrapper">
              
-          <div class="card my-cards card-success" id="conservativeclose">
+          <div class="card my-cards card-success" id="conservativeclosem">
       <div class="card-head card-head-success">
             <span class="label label-white">Portfolio</span>
       
@@ -1736,7 +1742,7 @@ border-radius: 32px;
           </tr>
         </table>
       </div>
-      <a  id="conservative" class="link conservative">View Detailed Allocation</a>
+      <a  id="conservative" class="link conservativem">View Detailed Allocation</a>
       </div>
       </div>
 
@@ -1747,7 +1753,7 @@ border-radius: 32px;
 
       <div class="carousel-item">
       <div class="cards-wrapper">
-          <div class="card my-cards card-info" id="balancedclose">
+          <div class="card my-cards card-info" id="balancedclosem">
       <div class="card-head card-head-info">
             <span class="label label-white">Portfolio</span>
       
@@ -1890,7 +1896,7 @@ border-radius: 32px;
           </tr>
         </table>
       </div>
-      <a  id="balanced" class="link balanced">View Detailed Allocation</a>
+      <a  id="balanced" class="link balancedm">View Detailed Allocation</a>
       </div>
       </div>
       </div>
@@ -1898,7 +1904,7 @@ border-radius: 32px;
 
       <div class="carousel-item">
       <div class="cards-wrapper">
-        <div class="card my-cards card-warning" id="balancedPclose">
+        <div class="card my-cards card-warning" id="balancedPclosem">
       <div class="card-head card-head-warning">
             <span class="label label-white">Portfolio</span>
       
@@ -2041,7 +2047,7 @@ border-radius: 32px;
           </tr>
         </table>
       </div>
-      <a  id="balancedP" class="link balancedP">View Detailed Allocation</a>
+      <a  id="balancedP" class="link balancedPm">View Detailed Allocation</a>
       </div>
       </div>
 
@@ -2050,7 +2056,7 @@ border-radius: 32px;
 
       <div class="carousel-item">
       <div class="cards-wrapper">
-          <div class="card my-cards card-default" id="growthclose">
+          <div class="card my-cards card-default" id="growthclosem">
       <div class="card-head card-head-default">
             <span class="label label-white">Portfolio</span>
       
@@ -2193,7 +2199,7 @@ border-radius: 32px;
           </tr>
         </table>
       </div>
-      <a  id="growth" class="link growth">View Detailed Allocation</a>
+      <a  id="growth" class="link growthm">View Detailed Allocation</a>
       </div>
       </div>
 
@@ -2205,7 +2211,7 @@ border-radius: 32px;
                 <div class="carousel-inner investing-portfolio">
       <div class="carousel-item active">
         <div class="cards-wrapper">
-             <div class="card my-cards card-danger" id="highgrowthclose">
+             <div class="card my-cards card-danger" id="highgrowthclosem">
       <div class="card-head card-head-danger">
             <span class="label label-white">Portfolio</span>
       
@@ -2348,7 +2354,7 @@ border-radius: 32px;
           </tr>
         </table>
       </div>
-      <a  id="high-growth" class="link high-growth">View Detailed Allocation</a>
+      <a  id="high-growth" class="link high-growthm">View Detailed Allocation</a>
       </div>
       </div>
      
@@ -2748,6 +2754,54 @@ border-radius: 32px;
        $(this).text("View Detailed Allocation");
     });
   
+
+
+    $(".high-growthm").click(function(){
+      $(".high-growth-open").toggle();
+      var element = document.getElementById("highgrowthclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+       $(this).text("Close Detailed Allocation");
+      else
+       $(this).text("View Detailed Allocation");
+      });
+    $(".conservativem").click(function(){
+      $(".conservative-open").toggle();
+      var element = document.getElementById("conservativeclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+       $(this).text("Close Detailed Allocation");
+      else
+       $(this).text("View Detailed Allocation");
+    });
+    $(".balancedm").click(function(){
+      $(".balanced-open").toggle();
+      var element = document.getElementById("balancedclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+       $(this).text("Close Detailed Allocation");
+      else
+       $(this).text("View Detailed Allocation");
+    });
+    $(".balancedPm").click(function(){
+      $(".balancedP-open").toggle();
+      var element = document.getElementById("balancedPclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+       $(this).text("Close Detailed Allocation");
+      else
+       $(this).text("View Detailed Allocation");
+    });
+    $(".growthm").click(function(){
+      $(".growth-open").toggle();
+      var element = document.getElementById("growthclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+       $(this).text("Close Detailed Allocation");
+      else
+       $(this).text("View Detailed Allocation");
+    });
+    
   });
   </script>
 </body>
