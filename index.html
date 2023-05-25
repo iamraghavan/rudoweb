@@ -20,7 +20,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-  <title>RuDo</title>
+
+
+<!-- UI ICONS -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <!-- ----- -->
+
+<!-- Title -->
+
+<!-- OG Tags -->
+
+
   <style>
     .card-danger {
       background: #ffece8;
@@ -298,6 +308,63 @@
       }
     }
   </style>
+
+
+<style>
+
+
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-bar {
+    height: 70px;
+    background-color: #01001a;
+}
+.nav-buttons {
+    margin-right: 60px;
+}
+.logo {
+    /* width: 140px;
+    height: 60px; */
+    margin-left: 60px;
+    background-size: cover;
+    background-position: center;
+}
+i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+.hide-lg ,.sm-button-div {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hide-sm {
+        display: none;
+    }
+    .hide-lg {
+        display: flex;
+    }
+    .logo {
+        margin-left: 20px;
+        width: 100px;
+    }
+    .sm-button-div {
+        height: 100px;
+        background-color: #01001a;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+
+</style>
+
+
 </head>
 
 <body>
@@ -338,50 +405,25 @@
   </section> -->
   
   
-<style>
-  .logo {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
-  }
-  @media (max-width: 767px) {
-    /* Styles for mobile devices */
-    .navbar-brand {
-      margin-right: auto !important;
-    }
-    .navbar-nav {
-      flex-direction: column;
-      text-align: center;
-    }
-    .navbar-nav .nav-link {
-      margin: 5px;
-    }
-    .navbar-toggler {
-      margin-left: auto;
-    }
-  }
-</style>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom border-color" style="background-color: #01001A; height: 70px;">
-    <a class="navbar-brand" href="#">
-      <img src="https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FImages%2FFull_logo.png?alt=media&token=f6225562-da5d-4b13-a464-165c425880fb" alt="Logo" class="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <button class="btn btn-info" style="background-color: #1DB5FF;">Refer & Earn</button>
-        </li>
-        <li class="nav-item">
-          <button class="btn btn-outline-info text-light" style="border-color: #1DB5FF;">#Financial Fitness Test</button>
-        </li>
-      </ul>
-    </div>
-  </nav>
   
 <!--  Dependencies  -->
   
+<section id="nav-bar">
+  <div class="logo">
+      <img src="https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FImages%2FFull_logo.png?alt=media&token=f6225562-da5d-4b13-a464-165c425880fb" alt="" style="width: 100%;height: 100%;">
+  </div>
+  <div class="nav-buttons hide-sm">
+    <button class="btn btn-info" style="background-color: #1DB5FF;">Refer & Earn</button>
+    <button class="btn btn-outline-info text-light" style="border-color: #1DB5FF;">#Financial Fitness Test</button>
+  </div>
+  <i class="fi fi-sr-bars-staggered hide-lg" onclick="smBtn()"></i>
+
+</section>
+<div id="sm-dd" class="sm-button-div" style="display: none;">
+  <button class="btn btn-info" style="background-color: #1DB5FF; margin: 10px 0px 0px 0px;">Refer & Earn</button>
+  <button class="btn btn-outline-info text-light" style="border-color: #1DB5FF;margin: 10px 0px 0px 0px;">#Financial Fitness Test</button>
+</div>
   
   
   
@@ -520,56 +562,80 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
 
 
   <!-- roundup -->
-  <section class="">
-    <div class="d-flex flex-column align-items-center justify-content-between mx-auto" style="height: 30%;">
-      <div class="d-flex flex-column align-items-center justify-content-center fs-2 fw-bold m-4">
-        <span class="text-center">Grow your spare change</span>
-        <span class="text-center">automatically with <span
-            style="background-image: url('./images/roundup-vect.png');background-size: cover;background-repeat: no-repeat;background-position: center;">Roundups</span></span>
+  <!-- <section class="">
 
-      </div>
-      <div class="mx-auto col-12 col-lg-6 text-center m-2 px-3">
-        <span class="">Transform your everyday purchases into investments! With spare change from AED 18.50 coffee,
-          invest AED 1.50 towards your future.</span>
-
-      </div>
-    </div>
     <div class="container">
       <div class="row my-5">
-        <div class="col-11 col-lg-6 mx-auto">
+        <div class=" col-lg-6 mx-auto">
 
-          <div class="d-flex flex-column align-items-start justify-content-evenly h-100">
-            <div class="d-flex align-items-center justify-content-center">
-              <img class="my-blue-tick" src="./images/check-vect.png" alt="" style="margin-right: 20px;">
-              <p class="m-0" style="color: #A7B5BE;">Link all of your bank accounts</p>
-            </div>
-            <div class="d-flex align-items-center justify-content-center my-5 my-lg-0">
-              <img class="my-blue-tick" src="./images/check-vect.png" alt="" style="margin-right: 20px;">
-              <p class="m-0" style="color: #A7B5BE;">We’ll set aside your spare change from<br> every purchase</p>
-
-            </div>
-            <div class="d-flex align-items-center justify-content-center">
-              <img class="my-blue-tick" src="./images/check-vect.png" alt="" style="margin-right: 20px;">
-              <p class="m-0" style="color: #A7B5BE;">And invest the change once it reaches<br> at least $5</p>
-
-            </div>
+     <h1>Grow your spare change automatically with <span
+      style="background-image: url('./images/roundup-vect.png');background-size: cover;background-repeat: no-repeat;background-position: center;">Roundups</span> </h1>
 
           </div>
         </div>
-        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+        <div class=" col-lg-6 mt-5 mt-lg-0">
 
           <div class="d-flex align-items-center">
-            <!-- background-image: url('./images/Frame\ 2973.png');background-position: center;background-size: cover; background-repeat: no-repeat; -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6rYzZQXJ-3Q"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+            
+              <img src="https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FAutomatic_Investing_Illustration%20(1).png?alt=media&token=b3ce8fb6-093d-427c-af16-1043ba375a5a" alt="" srcset="">
 
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+<style>
+  .container-se {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-se {
+  flex-basis: 50%;
+}
+
+.image-se img {
+  width: 600px;
+    height: auto;
+}
+
+.content {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-se {
+    flex-direction: column;
+  }
+  
+  .image-se,
+  .content {
+    flex-basis: 100%;
+  }
+}
+
+</style>
+
+
+  <div class="container-se">
+    <div class="content">
+      <h2 style="
+    padding: 0px 10px 10px 40px;
+">Grow your spare change 
+        <br>
+        automatically with <span style="background-image: url('./images/roundup-vect.png');background-size: cover;background-repeat: no-repeat;background-position: center;">Roundups</span> </h2>
+      <p style="
+      padding: 0px 10px 10px 40px;
+  ">Transform your everyday purchases into investments! With spare change from AED 18.50 coffee, invest AED 1.50 towards your future.</p>
+    </div>
+    <div class="image-se d-flex">
+      <img src="https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FAutomatic_Investing_Illustration%20(1).png?alt=media&token=b3ce8fb6-093d-427c-af16-1043ba375a5a" alt="Image">
+    </div>
+   
+  </div>
+  
 
 
   <!-- automated-investing -->
@@ -3158,6 +3224,21 @@ border-radius: 32px;
 
     });
   </script>
+
+
+<script>
+        
+  function smBtn() {
+      
+      let element = document.getElementById('sm-dd');
+      
+      if (element.style.display == "none") {
+          element.style.display = "flex"
+      } else {
+          element.style.display = "none"
+      }
+  }
+</script>
 </body>
 
 </html>
