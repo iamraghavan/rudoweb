@@ -222,6 +222,9 @@
     #balanced2close {
       height: 485px;
     }
+    #balancedP2close {
+      height: 485px;
+    }
 
     .high-growth-open {
       display: none;
@@ -236,6 +239,10 @@
     }
 
     .balancedP-open {
+      display: none;
+    }
+
+    .balancedP2-open {
       display: none;
     }
 
@@ -1877,7 +1884,7 @@ border-radius: 32px;
             <!-- Info END -->
 			
 			<!-- Warning Start -->
-            <div class="card my-cards card-warning" id="balancedPclose">
+            <div class="card my-cards card-warning" id="balancedP2close">
               <div class="card-head card-head-warning">
                 <span class="label label-white">Portfolio</span>
 
@@ -1946,7 +1953,7 @@ border-radius: 32px;
                   </div>
                 </div>
 
-                <div class="balancedP-open open-box mt-2">
+                <div class="balancedP2-open open-box mt-2">
                   <table>
                     <tr>
                       <td><img src="investing-bg/bullet.png" width="20px"></td>
@@ -2027,7 +2034,7 @@ border-radius: 32px;
                     </tr>
                   </table>
                 </div>
-                <a id="balancedP" class="link balancedP">View Detailed Allocation</a>
+                <a id="balancedP2" class="link balancedP2">View Detailed Allocation</a>
               </div>
             </div>
 
@@ -3289,6 +3296,15 @@ border-radius: 32px;
       $(".balancedP").click(function () {
         $(".balancedP-open").toggle();
         var element = document.getElementById("balancedPclose");
+        element.classList.toggle("growthopen");
+        if ($(this).text() == 'View Detailed Allocation')
+          $(this).text("Close Detailed Allocation");
+        else
+          $(this).text("View Detailed Allocation");
+      });
+      $(".balancedP2").click(function () {
+        $(".balancedP2-open").toggle();
+        var element = document.getElementById("balancedP2close");
         element.classList.toggle("growthopen");
         if ($(this).text() == 'View Detailed Allocation')
           $(this).text("Close Detailed Allocation");
