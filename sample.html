@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.card-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 100%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-right: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-controls button {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card-slider">
+        <div class="cards-container">
+          <div class="card">
+            <img src="card1.jpg" alt="Card 1">
+            <h3>Card 1</h3>
+            <p>Card 1 content goes here.</p>
+          </div>
+          <div class="card">
+            <img src="card2.jpg" alt="Card 2">
+            <h3>Card 2</h3>
+            <p>Card 2 content goes here.</p>
+          </div>
+          <div class="card">
+            <img src="card3.jpg" alt="Card 3">
+            <h3>Card 3</h3>
+            <p>Card 3 content goes here.</p>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev"><</button>
+          <button class="next">></button>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+  var cardsContainer = $('.cards-container');
+  var cardWidth = $('.card').outerWidth(true);
+  var cardCount = $('.card').length;
+  var currentPosition = 0;
+
+  function slideCards() {
+    cardsContainer.css('transform', 'translateX(-' + (currentPosition * cardWidth) + 'px)');
+  }
+
+  function updateSliderControls() {
+    $('.slider-controls .prev').prop('disabled', currentPosition === 0);
+    $('.slider-controls .next').prop('disabled', currentPosition === cardCount - 1);
+  }
+
+  $('.next').click(function() {
+    if (currentPosition < cardCount - 1) {
+      currentPosition++;
+      slideCards();
+      updateSliderControls();
+    }
+  });
+
+  $('.prev').click(function() {
+    if (currentPosition > 0) {
+      currentPosition--;
+      slideCards();
+      updateSliderControls();
+    }
+  });
+
+  $(window).resize(function() {
+    cardWidth = $('.card').outerWidth(true);
+    slideCards();
+  });
+
+  updateSliderControls();
+});
+
+</script>
+</body>
+</html>
