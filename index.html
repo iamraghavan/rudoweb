@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,284 +54,307 @@
 <!-- ------- -->
 
 
-  <style>
-    .card-danger {
-      background: #ffece8;
+<style>
+  .carousel-control-next, .carousel-control-prev {
+    opacity: 1 !important;
+  }
+  .carousel-control-prev:hover{
+    background-color: #1DB5FF !important;
+  }
+  .carousel-control-next:hover{
+    background-color: #1DB5FF !important;
+  }
+  .carousel-control-prev_active{
+    background-color: #1DB5FF !important;
+  }
+  .carousel-control-next_active{
+    background-color: #1DB5FF !important;
+  }
+  .card-danger {
+    background: #ffece8;
+  }
+
+  .card-success {
+    background: #ebf7f2;
+  }
+
+  .card-info {
+    background: #e5f8fb;
+  }
+
+  .card-warning {
+    background: #fff6e5;
+  }
+
+  .card-default {
+    background: #e2e6e9;
+  }
+
+  .label-white {
+    background: #fff;
+    background: #fff;
+    padding: 1px 10px;
+
+    border-radius: 3px;
+    border: 1px solid #d6d6d6;
+  }
+
+  .card-danger h4 {
+    color: #e65552;
+  }
+
+  .card-success h4 {
+    color: #27ab6d;
+  }
+
+  .card-info h4 {
+    color: #7cc8c2;
+  }
+
+  .card-warning h4 {
+    color: #ffab00;
+  }
+
+  .card-default h4 {
+    color: #788395;
+  }
+
+  .investing-portfolio .card {
+    display: block;
+    display: block;
+    color: #091e42;
+    font-size: 9pt;
+  }
+
+  .small-text {
+    font-size: 8pt;
+  }
+
+  .card-head-danger {
+    background-image: url("investing-bg/bg-danger.png");
+  }
+
+  .card-head-success {
+    background-image: url("investing-bg/bg-success.png");
+  }
+
+  .card-head-info {
+    background-image: url("investing-bg/bg-info.png");
+  }
+
+  .card-head-warning {
+    background-image: url("investing-bg/bg-warning.png");
+  }
+
+  .card-head-default {
+    background-image: url("investing-bg/bg-default.png");
+  }
+
+  .card-head {
+    padding: 15px 10px;
+    min-height: 180px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: 600;
+  }
+
+  .card-content {
+    padding: 15px 10px;
+    background: white;
+  }
+
+  .text-black {
+    color: black;
+  }
+
+  .investing-portfolio .card hr {
+    margin: 0px !important;
+    height: 1.5px;
+  }
+
+  .portfolio-box {
+    border: 1.5px solid #c6cdd5;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .investing-portfolio h4 {
+    min-height: 30px;
+  }
+
+  .investing-portfolio h6 {
+    min-height: 20px;
+  }
+
+  .portfolio-box h6 {
+    font-size: 9pt;
+    margin-top: 10px;
+  }
+
+  .label-gray {
+    font-size: 7pt;
+    background: #e6e9ee;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: none;
+  }
+
+  .growthopen {
+    height: 730px !important;
+  }
+
+  #highgrowthclose {
+    height: 485px;
+  }
+
+  #conservativeclose {
+    height: 485px;
+  }
+
+  #balancedclose {
+    height: 485px;
+  }
+
+  #balancedPclose {
+    height: 485px;
+  }
+
+  #growthclose {
+    height: 485px;
+  }
+
+  #highgrowth2close {
+    height: 485px;
+  }
+
+  #conservative2close {
+    height: 485px;
+  }
+
+  #balanced2close {
+    height: 485px;
+  }
+  #balancedP2close {
+    height: 485px;
+  }
+
+  .high-growth-open {
+    display: none;
+  }
+
+  .conservative-open {
+    display: none;
+  }
+
+  .balanced-open {
+    display: none;
+  }
+
+  .balancedP-open {
+    display: none;
+  }
+
+  .balancedP2-open {
+    display: none;
+  }
+
+  .growth-open {
+    display: none;
+  }
+
+  .high-growth2-open {
+    display: none;
+  }
+
+  .conservative2-open {
+    display: none;
+  }
+
+  .balanced2-open {
+    display: none;
+  }
+
+  .open-box {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .progress-bar-danger {
+    background: #e65552;
+  }
+
+  .progress-bar-success {
+    background: #27ab6d;
+  }
+
+  .progress-bar-info {
+    background: #7cc8c2;
+  }
+
+  .progress-bar-warning {
+    background: #ffab00;
+  }
+
+  .progress-bar-default {
+    background: #788395;
+  }
+
+  .progress {
+    background: #fff;
+  }
+
+  .detailed-allo-table td {
+    padding-top: 5px;
+  }
+
+  .link {
+    cursor: pointer;
+  color: deepskyblue;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .md-slide {
+      display: none !important;
     }
 
-    .card-success {
-      background: #ebf7f2;
+    .progress-bar-danger-r {
+      width: 54px !important;
+      height: 54px !important;
+      font-size: 4.8pt !important;
+      line-height: 9pt !important;
     }
+  }
 
-    .card-info {
-      background: #e5f8fb;
+  @media only screen and (min-width: 600px) {
+    .sm-slide {
+      display: none !important;
     }
-
-    .card-warning {
-      background: #fff6e5;
+  }
+  @media only screen and (min-width: 1000px){
+    .progress-bar-danger-r {
+      width: 43px !important;
+      height: 43px !important;
+      font-size: 4.8pt !important;
+      line-height: 9pt !important;
     }
-
-    .card-default {
-      background: #e2e6e9;
+  }
+</style>
+<style>
+  @media only screen and (max-width: 600px) {
+    .carousel-control-prev{
+      margin-left: 60% !important;
     }
-
-    .label-white {
-      background: #fff;
-      background: #fff;
-      padding: 1px 10px;
-
-      border-radius: 3px;
-      border: 1px solid #d6d6d6;
+    .carousel-control-next{
+      margin-right: 2% !important;
     }
-
-    .card-danger h4 {
-      color: #e65552;
-    }
-
-    .card-success h4 {
-      color: #27ab6d;
-    }
-
-    .card-info h4 {
-      color: #7cc8c2;
-    }
-
-    .card-warning h4 {
-      color: #ffab00;
-    }
-
-    .card-default h4 {
-      color: #788395;
-    }
-
-    .investing-portfolio .card {
-      display: block;
-      display: block;
-      color: #091e42;
-      font-size: 9pt;
-    }
-
-    .small-text {
-      font-size: 8pt;
-    }
-
-    .card-head-danger {
-      background-image: url("investing-bg/bg-danger.png");
-    }
-
-    .card-head-success {
-      background-image: url("investing-bg/bg-success.png");
-    }
-
-    .card-head-info {
-      background-image: url("investing-bg/bg-info.png");
-    }
-
-    .card-head-warning {
-      background-image: url("investing-bg/bg-warning.png");
-    }
-
-    .card-head-default {
-      background-image: url("investing-bg/bg-default.png");
-    }
-
-    .card-head {
-      padding: 15px 10px;
-      min-height: 180px;
-
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      font-weight: 600;
-    }
-
-    .card-content {
-      padding: 15px 10px;
-      background: white;
-    }
-
-    .text-black {
-      color: black;
-    }
-
-    .investing-portfolio .card hr {
-      margin: 0px !important;
-      height: 1.5px;
-    }
-
-    .portfolio-box {
-      border: 1.5px solid #c6cdd5;
-      padding: 10px 5px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .investing-portfolio h4 {
-      min-height: 30px;
-    }
-
-    .investing-portfolio h6 {
-      min-height: 20px;
-    }
-
-    .portfolio-box h6 {
-      font-size: 9pt;
-      margin-top: 10px;
-    }
-
-    .label-gray {
-      font-size: 7pt;
-      background: #e6e9ee;
-      padding: 1px 3px;
-      border-radius: 3px;
-      font-weight: bold;
-    }
-
-    .growthopen {
-      height: 730px !important;
-    }
-
-    #highgrowthclose {
-      height: 485px;
-    }
-
-    #conservativeclose {
-      height: 485px;
-    }
-
-    #balancedclose {
-      height: 485px;
-    }
-
-    #balancedPclose {
-      height: 485px;
-    }
-
-    #growthclose {
-      height: 485px;
-    }
-
-    #highgrowth2close {
-      height: 485px;
-    }
-
-    #conservative2close {
-      height: 485px;
-    }
-
-    #balanced2close {
-      height: 485px;
-    }
-
-    .high-growth-open {
-      display: none;
-    }
-
-    .conservative-open {
-      display: none;
-    }
-
-    .balanced-open {
-      display: none;
-    }
-
-    .balancedP-open {
-      display: none;
-    }
-
-    .growth-open {
-      display: none;
-    }
-
-    .high-growth2-open {
-      display: none;
-    }
-
-    .conservative2-open {
-      display: none;
-    }
-
-    .balanced2-open {
-      display: none;
-    }
-
-    .open-box {
-      background: #f0f0f0;
-      padding: 10px;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .progress-bar-danger {
-      background: #e65552;
-    }
-
-    .progress-bar-success {
-      background: #27ab6d;
-    }
-
-    .progress-bar-info {
-      background: #7cc8c2;
-    }
-
-    .progress-bar-warning {
-      background: #ffab00;
-    }
-
-    .progress-bar-default {
-      background: #788395;
-    }
-
-    .progress {
-      background: #fff;
-    }
-
-    .detailed-allo-table td {
-      padding-top: 5px;
-    }
-
-    .link {
-      cursor: pointer;
-	  color: deepskyblue;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .md-slide {
-        display: none !important;
-      }
-
-      .progress-bar-danger-r {
-        width: 54px !important;
-        height: 54px !important;
-        font-size: 6pt !important;
-        line-height: 9pt !important;
-      }
-    }
-
-    @media only screen and (min-width: 600px) {
-      .sm-slide {
-        display: none !important;
-      }
-    }
-    @media only screen and (min-width: 1000px){
-      .progress-bar-danger-r {
-        width: 43px !important;
-        height: 43px !important;
-        font-size: 6pt !important;
-        line-height: 9pt !important;
-      }
-    }
-  </style>
-  <style>
-    @media only screen and (max-width: 600px) {
-      .carousel-control-prev{
-        margin-left: 60% !important;
-      }
-      .carousel-control-next{
-        margin-right: 2% !important;
-      }
-    }
-  </style>
+  }
+</style>
 
 
 <style>
@@ -763,14 +785,21 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
     <div id="carouselExampleControls1" class="carousel slide w-75" data-bs-ride="carousel">
 
 
-      <div><button class="carousel-control-prev btn-slider" type="button" data-bs-target="#carouselExampleControls1"
-          data-bs-slide="prev"
-  ">
+      <div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
+          data-bs-slide="prev" style="height: 45px;width: 45px;margin-left: 84%;/* RuDo/Primary/Accent */
+
+          background: #343348;
+          border-radius: 32px;
+          ">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next btn-slider" type="button" data-bs-target="#carouselExampleControls1"
-          data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
+          data-bs-slide="next" style="height: 45px;width: 45px;margin-right: 60px;/* RuDo/Primary/Accent */
+
+          background: #343348;
+          border-radius: 32px;
+          ">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -1891,7 +1920,7 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
             <!-- Info END -->
 			
 			<!-- Warning Start -->
-            <div class="card my-cards card-warning" id="balancedPclose">
+            <div class="card my-cards card-warning" id="balancedP2close">
               <div class="card-head card-head-warning">
                 <span class="label label-white">Portfolio</span>
 
@@ -1960,7 +1989,7 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
                   </div>
                 </div>
 
-                <div class="balancedP-open open-box mt-2">
+                <div class="balancedP2-open open-box mt-2">
                   <table>
                     <tr>
                       <td><img src="investing-bg/bullet.png" width="20px"></td>
@@ -2041,7 +2070,7 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
                     </tr>
                   </table>
                 </div>
-                <a id="balancedP" class="link balancedP">View Detailed Allocation</a>
+                <a id="balancedP2" class="link balancedP2">View Detailed Allocation</a>
               </div>
             </div>
 
@@ -2063,18 +2092,18 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
       <div><button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="prev" style="height: 45px;width: 45px;margin-left: 84%;/* RuDo/Primary/Accent */
 
-  background: #1DB5FF;
-  border-radius: 32px;
-  ">
+          background: #343348;
+          border-radius: 32px;
+          ">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
           data-bs-slide="next" style="height: 45px;width: 45px;margin-right: 60px;/* RuDo/Primary/Accent */
 
-background: #1DB5FF;
-border-radius: 32px;
-">
+          background: #343348;
+          border-radius: 32px;
+          ">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -3339,135 +3368,150 @@ border-radius: 32px;
 
   </script>
 
-  <script>
-    $(document).ready(function () {
-      $(".high-growth").click(function () {
-        $(".high-growth-open").toggle();
-        var element = document.getElementById("highgrowthclose");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".conservative").click(function () {
-        $(".conservative-open").toggle();
-        var element = document.getElementById("conservativeclose");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".balanced").click(function () {
-        $(".balanced-open").toggle();
-        var element = document.getElementById("balancedclose");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".balancedP").click(function () {
-        $(".balancedP-open").toggle();
-        var element = document.getElementById("balancedPclose");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".growth").click(function () {
-        $(".growth-open").toggle();
-        var element = document.getElementById("growthclose");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".high-growth2").click(function () {
-        $(".high-growth2-open").toggle();
-        var element = document.getElementById("highgrowth2close");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".conservative2").click(function () {
-        $(".conservative2-open").toggle();
-        var element = document.getElementById("conservative2close");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".balanced2").click(function () {
-        $(".balanced2-open").toggle();
-        var element = document.getElementById("balanced2close");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-
-
-
-      $(".high-growthm").click(function () {
-        $(".high-growth-open").toggle();
-        var element = document.getElementById("highgrowthclosem");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".conservativem").click(function () {
-        $(".conservative-open").toggle();
-        var element = document.getElementById("conservativeclosem");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".balancedm").click(function () {
-        $(".balanced-open").toggle();
-        var element = document.getElementById("balancedclosem");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".balancedPm").click(function () {
-        $(".balancedP-open").toggle();
-        var element = document.getElementById("balancedPclosem");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-      $(".growthm").click(function () {
-        $(".growth-open").toggle();
-        var element = document.getElementById("growthclosem");
-        element.classList.toggle("growthopen");
-        if ($(this).text() == 'View Detailed Allocation')
-          $(this).text("Close Detailed Allocation");
-        else
-          $(this).text("View Detailed Allocation");
-      });
-
-    });
-  </script>
-
-
 <script>
-        
+  $(document).ready(function () {
+    $(".high-growth").click(function () {
+      $(".high-growth-open").toggle();
+      var element = document.getElementById("highgrowthclose");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".conservative").click(function () {
+      $(".conservative-open").toggle();
+      var element = document.getElementById("conservativeclose");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".balanced").click(function () {
+      $(".balanced-open").toggle();
+      var element = document.getElementById("balancedclose");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".balancedP").click(function () {
+      $(".balancedP-open").toggle();
+      var element = document.getElementById("balancedPclose");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".balancedP2").click(function () {
+      $(".balancedP2-open").toggle();
+      var element = document.getElementById("balancedP2close");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".growth").click(function () {
+      $(".growth-open").toggle();
+      var element = document.getElementById("growthclose");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".high-growth2").click(function () {
+      $(".high-growth2-open").toggle();
+      var element = document.getElementById("highgrowth2close");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".conservative2").click(function () {
+      $(".conservative2-open").toggle();
+      var element = document.getElementById("conservative2close");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".balanced2").click(function () {
+      $(".balanced2-open").toggle();
+      var element = document.getElementById("balanced2close");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+
+
+
+    $(".high-growthm").click(function () {
+      $(".high-growth-open").toggle();
+      var element = document.getElementById("highgrowthclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".conservativem").click(function () {
+      $(".conservative-open").toggle();
+      var element = document.getElementById("conservativeclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".balancedm").click(function () {
+      $(".balanced-open").toggle();
+      var element = document.getElementById("balancedclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".balancedPm").click(function () {
+      $(".balancedP-open").toggle();
+      var element = document.getElementById("balancedPclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+    $(".growthm").click(function () {
+      $(".growth-open").toggle();
+      var element = document.getElementById("growthclosem");
+      element.classList.toggle("growthopen");
+      if ($(this).text() == 'View Detailed Allocation')
+        $(this).text("Close Detailed Allocation");
+      else
+        $(this).text("View Detailed Allocation");
+    });
+
+    $(".carousel-control-prev").click(function () {
+      $(this).addClass("carousel-control-prev_active");
+      $('.carousel-control-next_active').removeClass("carousel-control-next_active");
+    });
+    $(".carousel-control-next").click(function () {
+      $(this).addClass("carousel-control-next_active");
+      $('.carousel-control-prev_active').removeClass("carousel-control-prev_active");
+    });
+
+  });
+</script>
+<script>   
   function smBtn() {
       
       let element = document.getElementById('sm-dd');
