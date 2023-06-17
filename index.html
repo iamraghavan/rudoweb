@@ -712,28 +712,155 @@ color: #A7B5BE;">*Get AED 20 as a credit by joining now!</p>
   }
 }
 
+.content1{
+  margin: 52px 0px 0px 35px;
+}
+
+
+
+@media only screen 
+   and (min-width : 200px) {
+    .tamilcontainet{
+  padding: 30px 10px -10px 60px;
+}
+}
+@media only screen 
+   and (min-width : 320px) {
+    .tamilcontainet{
+  padding: 30px 10px -10px 60px;
+}
+.lodmobi{
+  padding:auto;
+}
+}
+
+@media only screen 
+   and (min-width : 1600px) {
+    .tamilcontainet{
+  padding: 30px 10px 10px 60px;
+}
+}
+
+@media only screen 
+   and (min-width : 1200px) {
+    .tamilcontainet{
+  padding: 30px 10px 10px 60px;
+
+}
+.lodmobi{
+  padding: 2px 32px 1px 140px;
+  padding-left: 250px;
+}
+}
+
 </style>
 
 
-  <div class="container-se">
-    <div class="content">
-      <h2 style="
-    padding: 30px 10px 10px 60px;
+  <!-- <div class="container-se">
+    <div class="content1">
+      <h2 class="tamilcontainet"  style="
+      
 ">Grow your spare change 
+      
         <br>
         automatically with <span style="background-image: url('./images/roundup-vect.png');background-size: cover;background-repeat: no-repeat;background-position: center;">Roundup</span> </h2>
-        <p style="
+       
+
+       
+       <p class="tamilcontainet1 mobilod lodmobi" style="
             font-size: 16px;
     color: #FEFEFE;
     word-spacing: 1px;
-        padding: 30px 10px 10px 60px;
-    ">Transform your everyday purchases into investments! With spare change from AED 18.50 coffee, invest AED 1.50 towards your future.</p>
+    ">Transform your everyday purchases into <br> investments! With the spare change of AED 18.50 from grocery or coffee, invest just AED 1.5 towards your future.</p>
     </div>
     <div class="image-se d-flex">
       <img src="https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FAutomatic_Investing_Illustration%20(1).png?alt=media&token=b3ce8fb6-093d-427c-af16-1043ba375a5a" alt="Image">
     </div>
    
+  </div> -->
+
+  <style>
+
+.container11 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+     
+    }
+
+    .col-6 {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .text-container h2,
+    .text-container p {
+      margin: 0;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* For demonstration purposes */
+    /* .col-6:nth-child(odd) {
+      background-color: lightblue;
+    }
+
+    .col-6:nth-child(even) {
+      background-color: lightgreen;
+    } */
+
+    /* Media queries for responsiveness */
+    @media screen and (min-width: 768px) {
+      .col-6 {
+        width: 50%;
+      }
+    }
+  </style>
+ <div class="container11">
+  <div class="col-6">
+    <div class="text-container">
+      <h2 class="tamilcontainet"  style=" text-align: left;
+      text-justify: inter-word;
+      
+      ">Grow your spare change 
+            
+              <br>
+              automatically with <span style="background-image: url('./images/roundup-vect.png');background-size: cover;background-repeat: no-repeat;background-position: center;">Roundup</span> </h2>
+             
+      <p  class="mt-5 lodmobi"  style=" text-align: left;
+      text-justify: inter-word;">Transform your everyday purchases into investments! With the spare change of AED 18.50 from grocery or coffee, invest just AED 1.5 towards your future.</p>
+    </div>
+
   </div>
+  <div class="col-6">
+    <div class="image-container">
+      <img src="https://firebasestorage.googleapis.com/v0/b/intricate-aria-345510.appspot.com/o/bumblebeesAssets%2FAutomatic_Investing_Illustration%20(1).png?alt=media&token=b3ce8fb6-093d-427c-af16-1043ba375a5a" alt="Image Content">
+    </div>
+  </div>
+</div>
+
+
 
 
   <style>
@@ -3032,76 +3159,157 @@ border-radius: 32px;
 
   </section>
 
+  <style>
+    .logo-slider-container {
+  width: 100%;
+  overflow: hidden;
+}
 
+.logo-slider {
+  display: flex;
+  width: fit-content;
+  animation: slide 10s linear infinite;
+}
+
+.logo-slide {
+  flex-shrink: 0;
+  margin-right: 20px;
+  transition: transform 0.5s ease;
+}
+
+.logo-slide:last-child {
+  margin-right: 0;
+}
+
+.logo-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-slider {
+    animation: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .logo-slide {
+    scroll-snap-align: start;
+  }
+}
+
+  </style>
+
+
+  
   <!-- Recognise -->
   <section style="height: 22rem;margin-top: 100px;">
 
     <div style="width: 70%;height: 100%; margin: auto;">
       <p class="fs-3" style="text-align: center; margin-bottom: 5%;">Recognised by</p>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 15rem;">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-lg-2 mx-auto p-3 " style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-1.svg" alt="" width="100%">
-                </div>
-                <div class="col-6 col-lg-2 mx-auto p-3 " style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-img-2.svg" alt="" width="100%">
-                </div>
-                <div class="col-6 col-lg-2 mx-auto p-3 b-box-3" style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-img-3.svg" alt="" width="100%">
-                </div>
-                
-              </div>
-            </div>
+      <div class="container23">
+        <div class="carousel">
+          <div class="carousel-item">
+            <img src="https://rudowealth.com/images/brands/brand-1.svg" alt="Client Logo 1">
           </div>
           <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-lg-2 mx-auto p-3 " style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-1.svg" alt="" width="100%">
-                </div>
-                <div class="col-6 col-lg-2 mx-auto p-3 " style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-img-2.svg" alt="" width="100%">
-                </div>
-                <div class="col-6 col-lg-2 mx-auto p-3 " style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-img-3.svg" alt="" width="100%">
-                </div>
-               
-              </div>
-            </div>
+            <img src="https://rudowealth.com/images/brands/brand-2.svg" alt="Client Logo 2">
           </div>
           <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-6 col-lg-2 mx-auto p-3" style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-1.svg" alt="" width="100%">
-                </div>
-                <div class="col-6 col-lg-2 mx-auto p-3" style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-img-2.svg" alt="" width="100%">
-                </div>
-                <div class="col-6 col-lg-2 mx-auto p-3" style="background-color: #FEFEFE;border-radius: 20px;">
-                  <img src="./images/brands/brand-img-3.svg" alt="" width="100%">
-                </div>
-               
-              </div>
-            </div>
+            <img src="https://rudowealth.com/images/brands/brand-3.svg" alt="Client Logo 3">
           </div>
         </div>
-        <div class="carousel-indicators" style="margin-top: 50px;  display:none;">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-info"
-            aria-current="true" aria-label="Slide 1" style="width: 10px;height: 10px;border-radius: 50%;"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-info"
-            aria-label="Slide 2" style="width: 10px;height: 10px;border-radius: 50%;margin: 0 20px;"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="bg-info"
-            aria-label="Slide 3" style="width: 10px;height: 10px;border-radius: 50%;"></button>
-        </div>
+    
+        <div class="controls">
+            <span class="control" onclick="scrollCarousel('prev')" style="
+            padding: 0px 25px 0px 25px;
+            margin: 0px 10px 0px 0px;
+        ">&#8249;</span>
+            <span class="control" onclick="scrollCarousel('next')" style="
+            padding: 0px 25px 0px 25px;
+            margin: 0px 10px 0px 0px;
+        ">&#8250;</span>
+          </div>
       </div>
+    
 
     </div>
 
   </section>
+
+  <style>
+       .container23 {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-item {
+      flex-shrink: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .carousel-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .control {
+      margin: 0 5px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+
+
+  <script>
+    function scrollCarousel(direction) {
+      const carousel = document.querySelector('.carousel');
+      const carouselItems = carousel.querySelectorAll('.carousel-item');
+      const itemWidth = carouselItems[0].offsetWidth;
+
+      const currentPosition = carousel.scrollLeft;
+      let newPosition;
+
+      if (direction === 'prev') {
+        newPosition = currentPosition - itemWidth;
+        if (newPosition < 0) newPosition = 0;
+      } else if (direction === 'next') {
+        newPosition = currentPosition + itemWidth;
+        const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+        if (newPosition > maxScroll) newPosition = maxScroll;
+      }
+
+      carousel.scrollTo({
+        left: newPosition,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 
   <!-- blogs -->
   <section style="margin-top: 100px;">
